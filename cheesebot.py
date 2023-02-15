@@ -140,10 +140,10 @@ async def transfercheese (ctx):
                     await interaction.response.send_message(f"this code was never supposed to run")
 
                 await message.delete() #deletes interaction message so no one can click on it again
-            #IF NOT MESSAGE AUTHOR SEND AMONG US
+           
             else:
                 print(interaction.user, " tried transferring it - WHEN NOT CHEESE HOLDER") #console logs
-                await interaction.response.send_message(f"https://imgur.com/KbTHlIi", ephemeral = True)
+                await interaction.response.send_message(f"You arent the cheeseholder!", ephemeral = True)
 
 
         #this is for the select dropdown to add all its properties
